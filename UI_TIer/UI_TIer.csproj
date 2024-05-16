@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business_Tier\Business_Tier.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="createUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DeleteUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="registerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UpdateUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Receipt\" />
+  </ItemGroup>
+
+</Project>
